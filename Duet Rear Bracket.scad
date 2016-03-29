@@ -7,7 +7,7 @@ extrusion_width = 20;
 board_distance = 55;
 // Height of board from upper edge of extrusion
 // (0 = same height as upper edge of extrusion)
-additional_height = 5;
+additional_height = 3.5;
 // Width of mounting bracket
 mount_width = 40;
 // Thickness of bracket
