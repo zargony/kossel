@@ -22,8 +22,8 @@ M569 P2 S1							; Drive 2 goes forwards
 M569 P3 S0							; Drive 3 goes backwards
 M569 P4 S0							; Drive 4 goes backwards
 M574 X2 Y2 Z2 S1					; set endstop configuration (all endstops at high end, active high)
-M665 R124.91 L243.74 B80 H258.52 X-0.59 Y-0.19 Z0.0	; set delta radius, diagonal rod length, printable radius and homed height
-M666 X0.73 Y-0.16 Z-0.57			; put your endstop adjustments here, or let auto calibration find them
+M665 R124.46 L242.78 B80 H258.64 X-0.29 Y-0.56 Z0.0	; set delta radius, diagonal rod length, printable radius and homed height
+M666 X0.82 Y-0.00 Z-0.82			; put your endstop adjustments here, or let auto calibration find them
 M92 X160 Y160 Z160					; Set axis steps/mm
 M906 X1000 Y1000 Z1000 E1200 I60	; Set motor currents (mA) and increase idle current to 60%
 M201 X1000 Y1000 Z1000 E1000		; Accelerations (mm/s^2)
@@ -45,7 +45,7 @@ M92 E188							; Set extruder steps per mm
 
 ; Z probe and compensation definition
 M558 P1 X0 Y0 Z0					; Z probe is a differential IR sensor and is not used for homing any axes
-G31 X0 Y0 Z1.26 P500				; Set the zprobe height and threshold (put your own values here)
+G31 X0 Y0 Z1.05 P500				; Set the zprobe height and threshold (put your own values here)
 
 M208 S1 Z-0.2						; set minimum Z
 ;
