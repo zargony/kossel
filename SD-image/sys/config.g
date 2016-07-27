@@ -45,7 +45,7 @@ M92 E188							; Set extruder steps per mm
 
 ; Z probe and compensation definition
 M558 P1 X0 Y0 Z0					; Z probe is a differential IR sensor and is not used for homing any axes
-G31 X0 Y0 Z1.05 P500				; Set the zprobe height and threshold (put your own values here)
+G31 X0 Y0 Z0.74 P500				; Set the zprobe height and threshold (put your own values here)
 
 M208 S1 Z-0.2						; set minimum Z
 ;
