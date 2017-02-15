@@ -1,4 +1,4 @@
-; Homing file for RepRapFirmware on Mini Kossel
+; Homing file for RepRapFirmware on Kossel
 G91							; use relative positioning
 G1 S1 X320 Y320 Z320 F2500	; move all carriages up 320mm, stopping at the endstops
 G1 S2 X-3 Y-3 Z-3			; move all carriages down 3mm
