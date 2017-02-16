@@ -40,7 +40,7 @@ M570 S200							; Allow extra heating time
 ; Tool definitions
 M563 P0 D0 H1                       ; Define tool 0
 G10 P0 S0 R0                        ; Set tool 0 operating and standby temperatures
-M92 E188	                       	; Set extruder steps per mm for first and second extruders
+M92 E193	                       	; Set extruder steps per mm for first and second extruders
 
 ; Z probe and compensation definition
 M558 P1 X0 Y0 Z0 H3 F300 T9000		; Z probe is IR and is not used for homing any axes, Z probe dive height 3mm, probing speed 300mm/min, travel speed 9000mm/min
