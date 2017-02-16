@@ -19,8 +19,8 @@ M569 P3 S0							; Drive 3 goes backwards
 M569 P4 S0							; Drive 4 goes backwards
 M574 X2 Y2 Z2 P1					; set endstop configuration (all endstops at high end, active high)
 
-M665 L242.780 R124.685 H258.609 B80 X-0.258 Y-0.040 Z0	; set delta radius, diagonal rod length, printable radius, homed height and XY tower corrections
-M666 X0.66 Y-0.08 Z-0.58			; put your endstop adjustments here, or use auto calibration to find them
+M665 L242.780 R124.229 H258.520 B80 X-0.335 Y0.228 Z0	; set delta radius, diagonal rod length, printable radius, homed height and XY tower corrections
+M666 X0.60 Y0.14 Z-0.74				; put your endstop adjustments here, or use auto calibration to find them
 M92 X160 Y160 Z160					; Set axis steps/mm (20 tooth pulleys, 0.9deg/step motors)
 M906 X1000 Y1000 Z1000 E1200 I60	; Set motor currents (mA) and increase idle current to 60%
 M201 X3000 Y3000 Z3000 E1000		; Accelerations (mm/s^2)
