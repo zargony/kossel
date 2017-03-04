@@ -12,6 +12,7 @@
 - Measure probe trigger with `G30 S-1`
 - The reported Z is the probe's Z offset (height difference between probe trigger height and nozzle tip) and should be used for the G31 configuration in config.g. The height offset should be in the range 1.0 to 2.0 mm for a differential IR probe.
 
+
 # Bed calibration
 
 #### Prerequisites
@@ -22,3 +23,14 @@
 - Note `M665` and `M666` values
 - Repeat autocalibration until values converge
 - Store values for `M665` and `M666` to config.g
+
+
+# Bed grid compensation
+
+#### Prerequisites
+- Printer calibration must be done first (G31, M665 and M666 set properly)
+
+#### Calibration
+- Define round bed grid with `M557 R80 S20` or rectangular bed grid with `M557 X20:180 Y20:180 S20` (might be optional if a stored heightmap is already present/loaded?)
+- Autocalibrate with `G29`
+- Bed heightmap is stored on SD card as `heightmap.csv`
