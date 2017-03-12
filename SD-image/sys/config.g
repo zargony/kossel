@@ -44,7 +44,7 @@ M92 E193	                       	; Set extruder steps per mm for first and secon
 
 ; Z probe and compensation definition
 M558 P1 X0 Y0 Z0 H3 F300 T9000		; Z probe is IR and is not used for homing any axes, Z probe dive height 3mm, probing speed 300mm/min, travel speed 9000mm/min
-G31 X0 Y0 Z0.56 P500				; Set the zprobe offset and threshold (put your own values here). For a delta, use zero X and Y offset.
+G31 X-13.5 Y-2.0 Z0.575 P500		; Set the zprobe offset and threshold (put your own values here). For a delta, use zero X and Y offset.
 
 ;*** If you are using axis compensation, put the figures in the following command
 M556 S78 X0 Y0 Z0                   ; Axis compensation here
