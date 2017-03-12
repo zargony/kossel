@@ -23,7 +23,7 @@ M665 L242.780 R124.949 H258.681 B80 X-1.112 Y-1.281 Z0	; set delta radius, diago
 M666 X0.95 Y-0.14 Z-0.80			; put your endstop adjustments here, or use auto calibration to find them
 M92 X160 Y160 Z160					; Set axis steps/mm (20 tooth pulleys, 0.9deg/step motors)
 M906 X1000 Y1000 Z1000 E1200 I60	; Set motor currents (mA) and increase idle current to 60%
-M201 X2500 Y2500 Z2500 E1000		; Accelerations (mm/s^2)
+M201 X3000 Y3000 Z3000 E1000		; Accelerations (mm/s^2)
 M203 X18000 Y18000 Z18000 E3600		; Maximum speeds (mm/min)
 M566 X600 Y600 Z600 E600			; Maximum instant speed changes
 G21                                 ; Work in millimetres
