@@ -21,4 +21,8 @@ G30 P10 X35.9 Y-20.8 Z-99999 H0
 G30 P11 X35.9 Y20.8 Z-99999 H0
 G30 P12 X0 Y0 Z-99999 H0 S6
 
+; Define grid for measuring bed heightmap with G29 if desired (measure circle with radius 80mm in steps of 20mm)
+M557 R80 S20
+;G29
+
 G1 X0 Y0 Z150 F9000			; get the head out of the way of the bed
