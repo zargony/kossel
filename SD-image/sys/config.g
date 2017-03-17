@@ -49,7 +49,7 @@ G31 X-13.5 Y-2.0 Z0.625 P500		; Set the zprobe offset and threshold (put your ow
 ;*** If you are using axis compensation, put the figures in the following command
 M556 S78 X0 Y0 Z0                   ; Axis compensation here
 
-M207 S7.0 F3600 Z0.1				; Set firmware retraction details
+M207 S4.5 F3600 Z1.0				; Set firmware retraction details
 M572 D0 S0.1						; set pressure advance
 
 T0									; select first print head
