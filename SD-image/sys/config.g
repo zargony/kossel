@@ -33,9 +33,11 @@ M566 X1200 Y1200 Z1200 E1200		; Maximum instant speed changes mm/minute
 ; Thermistors
 M305 P0 T100000 B3950 R4700 H30 L-500	; Put your own H and/or L values here to set the bed thermistor ADC correction
 M305 P1 T100000 B4267 R4700 H-3 L-150	; Put your own H and/or L values here to set the first nozzle thermistor ADC correction
-M301 H0 P20 I0.5 D1000 T0.85 W150 B5 ; PID settings for the bed
-M301 H1 P10 I0.10 D100 T0.50		; PID settings for extruder 0
 M570 S180							; Hot end may be a little slow to heat up so allow it 180 seconds
+
+; Heating/PID settings
+M307 H0 A95.2 C516.7 D0.5 S1.00 B0	; heating process parameters for bed
+M307 H1 A582.3 C149.9 D3.5 S1.00 B0	; heating process parameters for extruder 0
 
 ; Tool definitions
 M563 P0 D0 H1                       ; Define tool 0
@@ -44,7 +46,7 @@ M92 E193                           	; Set extruder steps per mm
 
 ; Z probe and compensation definition
 M558 P1 X0 Y0 Z0 H3 F300 T9000		; Z probe is a switch and is not used for homing any axes
-G31 X-13.5 Y-2.0 Z0.690 P500		; Set the zprobe height and threshold (put your own values here)
+G31 X-13.5 Y-2.0 Z0.539 P500		; Set the zprobe height and threshold (put your own values here)
 
 ;*** If you are using axis compensation, put the figures in the following command
 M556 S78 X0 Y0 Z0                   ; Axis compensation here
