@@ -2,7 +2,6 @@
 ; Before running this, you should have set up your zprobe Z offset to suit your build, in the G31 command in config.g.
 
 M561						; clear any bed transform, otherwise homing may be at the wrong height
-;G31 X0 Y0					; don't want any probe offset for this
 G28							; home the printer
 
 G1 X0 Y80 Z10 F9000		; go to just above the first probe point to speed up probing
@@ -24,4 +23,4 @@ G30 P9 X0 Y0 Z-99999 S6
 M557 R75 S20
 ;G29
 
-G1 X0 Y0 Z150 F9000			; get the head out of the way of the bed
+G1 X0 Y0 Z150 F9000		; get the head out of the way of the bed
