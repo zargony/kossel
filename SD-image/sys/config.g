@@ -46,7 +46,7 @@ M92 E193                           	; Set extruder steps per mm
 
 ; Z probe and compensation definition
 M558 P1 X0 Y0 Z0 H3 F200 T9000		; Z probe is a switch and is not used for homing any axes
-G31 X-13.5 Y-2.0 Z1.279 P500		; Set the zprobe height and threshold (put your own values here)
+G31 X-13.5 Y-2.0 Z1.433 P500		; Set the zprobe height and threshold (put your own values here)
 
 ;*** If you are using axis compensation, put the figures in the following command
 M556 S78 X0 Y0 Z0                   ; Axis compensation here
