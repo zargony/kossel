@@ -4,7 +4,7 @@
 M111 S0                             ; Debug off
 M550 Pkossel			        	; Machine name and Netbios name (can be anything you like)
 M551 Preprap                        ; Machine password (used for FTP)
-M540 P0xBE:0xEF:0xDE:0xAD:0xFE:0xED ; MAC Address
+M540 P0x5E:0x95:0xD9:0xED:0x05:0x26 ; MAC Address
 M552 P0.0.0.0						; IP address (0 = use DHCP)
 M554 P192.168.1.1                   ; Gateway
 M553 P255.255.255.0                 ; Netmask
